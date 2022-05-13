@@ -88,6 +88,7 @@
 										<li><a href="#">Multan</a></li>
 										<li><a href="#">Peshawar</a></li>
 										<li><a href="#">Quetta</a></li>
+										<li><a href="#">Islamabad</a></li>
 									</ul>
 							</li>
 							<li class="has-dropdown">
@@ -97,14 +98,9 @@
 										<li><a href="#">Booked Rooms</a></li>
 									</ul> -->
 							</li>
-							<li><a href="reservation.html">Booking</a></li>
-							<li><a href="reservation.html">News</a></li>
+							
 								<a href="gallery.html">Gallery</a>
-								<ul class="dropdown">
-									<li><a href="#">Events</a></li>
-									<li><a href="#">Food</a></li>
-									<li><a href="#">Coffees</a></li>
-								</ul>
+								
 							</li>
 							<li><a href="reservation.html">Reservation</a></li>
 							<li><a href="about.html">About</a></li>
@@ -124,20 +120,9 @@
 				<div class="col-md-12 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<h1>Life Is Beautiful <em></h1>
-							<h2>Unlock to enjoy the view of Martine <a href="http://freehtml5.co/" target="_blank"></a></h2>
-											{% for hotel in hotels %}			
-											<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
-												<div class="fh5co-item">
-													<h2>{{ hotel.name }}</h2>
-													<span class="fh5co-price"><sup></sup></span>
-													<h3>{{hotel.email}}</h3>
-													<h3>{{hotel.address}}</h3>
-													<h3>{{hotel.phonenumber}}</h3>
-
-												</div>
-											</div>
-											{% endfor %}
+							<h1> Experience the Freedom </h1>
+							<h2>Unlock to enjoy the view of Montona Resort <a href="http://freehtml5.co/" target="_blank"></a></h2>
+										
 						</div>
 					</div>
 				</div>
@@ -200,7 +185,7 @@
 					<h2>Today's Menu</h2>
 					<div class="row">
 						<div class="col-md-6">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam, itaque, nesciunt similique commodi omnis. Ad magni perspiciatis, voluptatum repellat.</p>
+							<p>One of the most difficult tasks of the day is to decide what to cook for dinner. It’s not as simple as what the family loves to eat, but also needs to take into consideration the grocery budget plus what is good for the house in the long-run. For instance, if the family loves meat, making a salan every single day would be a simple solution. But too much meat on a daily basis can be harmful, plus of course it will stretch the monthly budget.</p>
 						</div>
 					</div>
 				</div>
@@ -255,15 +240,16 @@
 											{% for hotel in hotels %}			
 											<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-item-wrap animate-box">
 												<div class="fh5co-item">
-													<h3>{{ hotel.name }}</h3>
+													<h2>{{ hotel.name }}</h2>
 													<span class="fh5co-price"><sup></sup></span>
-													<p>{{hotel.email}}</p>
-													<p>{{hotel.address}}</p>
-													<p>{{hotel.phonenumber}}</p>
+													<h3>{{hotel.email}}</h3>
+													<h3>{{hotel.address}}</h3>
+													<h3>{{hotel.phonenumber}}</h3>
 
 												</div>
 											</div>
 											{% endfor %}
+											
 										</div>
 									</div>
 								</div>
@@ -271,12 +257,7 @@
 						</div>
 					</header>
 
-	{% for hotel in hotels %}
-	<h1>{{hotel.name}}</h1>
-	<h2>{{hotel.email}}</h2>
-	<h3>{{hotel.address}}</h3>
-	<h4>{{hotel.phonenumber}}</h4>
-	{% endfor %}
+	
 
 	<div id="fh5co-featured-testimony" class="fh5co-section">
 		<div class="container">
@@ -292,11 +273,11 @@
 				</div>
 
 				<div class="col-md-5 animate-box img-to-responsive animate-box" data-animate-effect="fadeInLeft">
-						<img src="{% static 'images/person_1.jpg' %}" alt="">
+						<img src="{% static 'images/quetta.jpeg' %}" alt="">
 				</div>
 				<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
 					<blockquote>
-						<p> &ldquo; Quantum ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis! Doloribus aliquam voluptates corporis et tempora consequuntur ipsam. &rdquo;</p>
+						<p> &ldquo;  Montana welcomes you in a real cosmopolitan, pulsing milieu, at the same time offering peace and intimate retirement, just in the heart of the city centre. Timeless elegance tailored for the demands of our time; exceptional combination of magnificent architecture and divine cuisine, in perfect harmony. A Michelin-starred restaurant and a beautifully restored town palace joined forces for you! &rdquo;</p>
 						<p class="author"><cite>&mdash; Jane Smith</cite></p>
 					</blockquote>
 				</div>
@@ -312,30 +293,79 @@
 				<div class="col-md-6 animate-box">
 					<div class="fh5co-heading">
 						<h2>Our Best <em>&amp;</em> Unique Menu</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab debitis sit itaque totam, a maiores nihil, nulla magnam porro minima officiis!</p>
+						<p>Montana Resort & Spa is a family-friendly hotel that offers a wide range of accommodation types, from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at Lahore an unforgettable holiday.</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-md-push-1 animate-box">
 					<aside id="fh5co-slider-wrwap">
 					<div class="flexslider">
 						<ul class="slides">
-					   	<li style="background-image: url(images/gallery_7.jpeg);">
+					   	<li style="background-image: url(static/images/boti.jpg);">
 					   		<div class="overlay-gradient"></div>
 					   		<div class="container-fluid">
 					   			<div class="row">
 						   			<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
 						   				<div class="slider-text-inner">
 						   					<div class="desc">
-													<h2>Crab <em>with</em> Curry Sources</h2>
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eveniet quae, numquam magnam doloribus eligendi ratione rem, consequatur quos natus voluptates est totam magni! Nobis a temporibus, ipsum repudiandae dolorum.</p>
+													<h2>Chicken Boti</h2>
+													<p>Chicken Boti Kabab is an Indian Chicken Kabab recipe that is made with marinated boneless pieces of chicken that are skewered & cooked until just tender & juicy. You can make Chicken Boti Kabab on a griddle or Tawa, in an oven, air fryer or grill.</p>
 													<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 						   					</div>
-						   				</div>
+						   				</div>y
 						   			</div>
 						   		</div>
 					   		</div>
 					   	</li>
-					   	<li style="background-image: url(images/gallery_6.jpeg);">
+						   <li style="background-image: url(static/images/malai.jpg);">
+							<div class="overlay-gradient"></div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+										<div class="slider-text-inner">
+											<div class="desc">
+												 <h2>Chicken Malaai Boti</h2>
+												 <p>Malai Chicken Boti is a grilled chicken dish, which is extremely creamy in taste. It has cream cheese, heavy cream, yogurt, and a lot of spices. You can make this recipe easily in the comfort of your home. All you need is chicken, some spices, and an oven.</p>
+												 <p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+											</div>
+										</div>y
+									</div>
+								</div>
+							</div>
+						</li>
+					</li>
+					<li style="background-image: url(static/images/biryani.jpg);">
+					 <div class="overlay-gradient"></div>
+					 <div class="container-fluid">
+						 <div class="row">
+							 <div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+								 <div class="slider-text-inner">
+									 <div class="desc">
+										  <h2>Chicken Biryani</h2>
+										  <p>Chicken Biryani is a savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together. The bottom layer of rice absorbs all the chicken juices as it cooks, giving it a tender texture and rich flavor, while the top layer of rice turns out white and fluffy.</p>
+										  <p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+									 </div>
+								 </div>y
+							 </div>
+						 </div>
+					 </div>
+				 	</li>
+					 <li style="background-image: url(static/images/beef.jpg);">
+						<div class="overlay-gradient"></div>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+									<div class="slider-text-inner">
+										<div class="desc">
+											 <h2>Beef Biryani</h2>
+											 <p>Biryani is a popular layered rice and meat dish that's loved across all over India and Pakistan. What is this? Report Ad. Biryani has two main components: fluffy, fragrant basmati rice and a delicious saucy beef (or your choice of protein) curry or masala. AND, it's super delicious.</p>
+											 <p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+										</div>
+									</div>y
+								</div>
+							</div>
+						</div>
+						</li>
+					   	<li style="background-image: url(static/images/roast.jpg);">
 					   		<div class="overlay-gradient"></div>
 					   		<div class="container-fluid">
 					   			<div class="row">
@@ -343,7 +373,7 @@
 						   				<div class="slider-text-inner">
 						   					<div class="desc">
 													<h2>Tuna <em>&amp;</em> Roast Beef</h2>
-													<p>Ink is a free html5 bootstrap and a multi-purpose template perfect for any type of websites. A combination of a minimal and modern design template. The features are big slider on homepage, smooth animation, product listing and many more</p>
+													<p>Mixing tuna, mayo and beef is a classic of Italian cuisine, often served as a starter or as a buffet dish. This version is served in a panini, for easy transport!</p>
 													<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 						   					</div>
 						   				</div>
@@ -351,7 +381,7 @@
 						   		</div>
 					   		</div>
 					   	</li>
-					   	<li style="background-image: url(images/gallery_5.jpeg);">
+					   	<li style="background-image: url(static/images/egg.jpg);">
 					   		<div class="overlay-gradient"></div>
 					   		<div class="container-fluid">
 					   			<div class="row">
@@ -359,14 +389,30 @@
 						   				<div class="slider-text-inner">
 						   					<div class="desc">
 													<h2>Egg <em>with</em> Mushroom</h2>
-													<p>Ink is a free html5 bootstrap and a multi-purpose template perfect for any type of websites. A combination of a minimal and modern design template. The features are big slider on homepage, smooth animation, product listing and many more</p>
+													<p>Scrambled eggs with mushrooms is my favorite breakfast meal which is a scrambled egg mixed with mushrooms and onions. It is one of the simplest breakfast recipe to make while in the house. Furthermore, it is perfect to eat with toast bread, tortilla or even pancake.</p>
 													<p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
 						   					</div>
 						   				</div>
 						   			</div>
 						   		</div>
 					   		</div>
-					   	</li>		   	
+					   	</li>
+						   <li style="background-image: url(static/images/chinese.jpg);">
+							<div class="overlay-gradient"></div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0 col-md-pull-10 slider-text slider-text-bg">
+										<div class="slider-text-inner">
+											<div class="desc">
+												 <h2>Chinese Food</h2>
+												 <p>This huge undertaking of 12 collaborative projects resulted in the release of 49 rice varieties in China since 1999 -- each with potential for higher yields. IRRI's engagement with China helped the country become a world leader in hybrid rice, which can yield 15-20% more than other rice.</p>
+												 <p><a href="#" class="btn btn-primary btn-outline">Learn More</a></p>
+											</div>
+										</div>y
+									</div>
+								</div>
+							</div>
+							</li>		   	
 					  	</ul>
 				  	</div>
 				</aside>
@@ -380,13 +426,13 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Events</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, consequatur. Aliquam quaerat pariatur repellendus veniam nemo, saepe, culpa eius aspernatur cumque suscipit quae nobis illo tempora. Eum veniam necessitatibus, blanditiis facilis quidem dolore! Dolorem, molestiae.</p>
+					<p>Montana Resort & Spa is a family-friendly hotel that offers a wide range of accommodation types, from rooms to suites. All this in the peaceful surroundings of our beautiful gardens, will make your time at Lahore an unforgettable holiday.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/gallery_1.jpeg);"></a>
+						<a href="#" class="blog-bg" style="background-image: url(static/images/22.jpg);"></a>
 						<div class="blog-text">
 							<span class="posted_on">Feb. 15th 2016</span>
 							<h3><a href="#">Photoshoot On The Street</a></h3>
@@ -401,7 +447,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/gallery_2.jpeg);"></a>
+						<a href="#" class="blog-bg" style="background-image: url(static/images/33.jpg);"></a>
 						<div class="blog-text">
 							<span class="posted_on">Feb. 15th 2016</span>
 							<h3><a href="#">Surfing at Philippines</a></h3>
@@ -416,7 +462,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/gallery_3.jpeg);"></a>
+						<a href="#" class="blog-bg" style="background-image: url(static/images/11.jpg);"></a>
 						<div class="blog-text">
 							<span class="posted_on">Feb. 15th 2016</span>
 							<h3><a href="#">Focus On Uderwater</a></h3>
@@ -433,13 +479,15 @@
 		</div>
 	</div>
 	
-	<div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
+	<div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(static/images/haha.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Book a Table</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae enim quae vitae cupiditate, sequi quam ea id dolor reiciendis consectetur repudiandae. Rem quam, repellendus veniam ipsa fuga maxime odio? Eaque!</p>
+					<p>Montana Resort is open Wednesday to Sunday, with brunch on weekends.
+
+						Customary to the Bagatelle way, the entire team will be on hand to offer an unforgettable experience to first-time and returning guests, whilst fully observing updated health and safety protocols.</p>
 					<p><a href="reservation.html" class="btn btn-primary btn-outline">Book Now</a></p>
 				</div>
 			</div>
@@ -477,10 +525,10 @@
 				<div class="col-md-4 col-md-push-1 fh5co-widget">
 					<h4>Contact Information</h4>
 					<ul class="fh5co-footer-links">
-						<li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-						<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
-						<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-						<li><a href="http://https://freehtml5.co">freehtml5.co</a></li>
+						<li>Tipu Road <br> Gulberg III, Lahore, Pakistan</li>
+						<li><a href="tel://1234567920">+ 923144980703</a></li>
+						<li><a href="mailto:info@yoursite.com">montana@resort.com</a></li>
+						<li><a href="http://https://freehtml5.co">montanaresortco</a></li>
 					</ul>
 				</div>
 
